@@ -1,10 +1,11 @@
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
-import { routing } from '@/i18n/routing';
+import { routing } from '@/lib/i18n/routing';
 import { LocaleSwitcher, MainNavigation } from '@/components';
 import { headers } from 'next/headers';
 
 import { isEmpty } from 'lodash';
+import Providers from '../StoreProvider';
 
 export default async function LocaleLayout({
   children,
@@ -22,6 +23,8 @@ export default async function LocaleLayout({
 
   if (!hasLocale(routing.locales, locale) || isEmpty(supportedLocales)) notFound();
 
+  const preloadedState = { counter: { value: 5 } };
+
   return (
     <html lang={locale}>
       <body>
@@ -32,7 +35,9 @@ export default async function LocaleLayout({
 
             <MainNavigation />
 
-            {children}
+            <Providers preloadedState={preloadedState}>
+              {children}
+            </Providers>
           </>
         </NextIntlClientProvider>
       </body>

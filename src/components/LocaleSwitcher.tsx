@@ -1,6 +1,6 @@
 'use client';
 
-import { Link } from "@/i18n/navigation";
+import { Link } from "@/lib/i18n/navigation";
 import { without } from "lodash";
 import { Locale, useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
