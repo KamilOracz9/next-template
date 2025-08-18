@@ -17,11 +17,6 @@ export const routing = defineRouting({
             defaultLocale: 'pl-PL',
             locales: ['pl-PL', 'en-US']
         },
-        // {
-        //     domain: 'localhost:3001',
-        //     defaultLocale: 'en-US',
-        //     locales: ['en-US']
-        // },
     ],
     pathnames: {
         '/': '/',

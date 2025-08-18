@@ -4,6 +4,7 @@ import { routing } from '@/lib/i18n/routing';
 import { LocaleSwitcher, MainNavigation } from '@/components';
 import { headers } from 'next/headers';
 
+import '@/assets/globals.css';
 import { isEmpty } from 'lodash';
 import Providers from '../StoreProvider';
 
