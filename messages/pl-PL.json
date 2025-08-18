@@ -1,0 +1,18 @@
+{
+    "General": {
+        "Languages": {
+            "pl-PL": "PL",
+            "en-US": "EN"
+        },
+        "Navigation": {
+            "HomePage": "Glowna",
+            "AboutPage": "O nas"
+        }
+    },
+    "HomePage": {
+        "title": "Hello world! PL"
+    },
+    "AboutPage": {
+        "title": "About page PL"
+    }
+}
