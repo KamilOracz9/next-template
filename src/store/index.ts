@@ -1,9 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import counterReducer from "./counterSlice";
+import authReducer from "./authSlice";
 
 export function makeStore(preloadedState?: any) {
   return configureStore({
-    reducer: { counter: counterReducer } as any,
+    reducer: { 
+      counter: counterReducer,
+      auth: authReducer,
+    } as any,
     preloadedState
   });
 }

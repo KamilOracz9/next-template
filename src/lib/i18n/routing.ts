@@ -24,5 +24,9 @@ export const routing = defineRouting({
             'en-US': '/about',
             'pl-PL': '/o-nas'
         },
+        '/sign-in': {
+            'en-US': '/sign-in',
+            'pl-PL': '/zaloguj'
+        },
     }
 });

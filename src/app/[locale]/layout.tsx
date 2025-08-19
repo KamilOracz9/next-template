@@ -31,15 +31,13 @@ export default async function LocaleLayout({
       <body>
 
         <NextIntlClientProvider>
-          <>
+          <Providers preloadedState={preloadedState}>
             <LocaleSwitcher supportedLocales={supportedLocales} />
 
             <MainNavigation />
 
-            <Providers preloadedState={preloadedState}>
-              {children}
-            </Providers>
-          </>
+            {children}
+          </Providers>
         </NextIntlClientProvider>
       </body>
     </html>
