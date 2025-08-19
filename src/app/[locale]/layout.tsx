@@ -24,7 +24,7 @@ export default async function LocaleLayout({
 
   if (!hasLocale(routing.locales, locale) || isEmpty(supportedLocales)) notFound();
 
-  const preloadedState = { counter: { value: 5 } };
+  const preloadedState = { auth: { token: '' } };
 
   return (
     <html lang={locale}>

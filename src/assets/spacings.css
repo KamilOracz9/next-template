@@ -1,0 +1,13 @@
+:root{
+    --between-sections-gap: 4rem;
+    --between-sections-gap-mobile-scale: .25;
+    --between-sections-gap-container-scale: 3;
+}
+
+@utility mt-section {
+    margin-top: clamp(calc(var(--between-sections-gap) * var(--between-sections-gap-mobile-scale)), 4cqw * var(--between-sections-gap-container-scale), var(--between-sections-gap));
+}
+
+@utility mb-section {
+    margin-bottom: clamp(calc(var(--between-sections-gap) * var(--between-sections-gap-mobile-scale)), 4cqw * var(--between-sections-gap-container-scale), var(--between-sections-gap));
+}

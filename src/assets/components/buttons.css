@@ -1,0 +1,44 @@
+@utility btn-sm {
+    font-size: var(--typo-14-font-size);
+    padding: 0.875rem 1.5rem;
+}
+
+@utility btn-md {
+    font-size: var(--typo-22-font-size);
+    padding: 0.875rem 1.25rem;
+}
+
+@utility btn-lg {
+    font-size: var(--typo-30-font-size);
+    padding: 0.875rem 1.5rem;
+}
+
+@utility btn-outline {
+    border: 1px solid var(--tw-color-black);
+    background: transparent;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    transition: 300ms;
+
+    &:hover {
+        background: var(--tw-color-black);
+        color: var(--tw-color-white);
+    }
+}
+
+@utility btn-filled {
+    border: 1px solid var(--tw-color-black);
+    background: var(--tw-color-black);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    transition: 300ms;
+    color: var(--tw-color-white);
+
+    &:hover {
+        background: var(--tw-color-white);
+        color: var(--tw-color-black);
+        border-color: var(--tw-color-black);
+    }
+}

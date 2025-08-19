@@ -1,0 +1,36 @@
+:root {
+    --font-size-12: .75rem;
+    --font-size-14: .875rem;
+    --font-size-16: 1rem;
+    --font-size-22: 1.375rem;
+    --font-size-30: 1.875rem;
+
+    --font-size-mobile-scale: .8;
+    --font-size-container-scale: 1/3;
+
+    --typo-12-font-size: clamp(calc(var(--font-size-12) * var(--font-size-mobile-scale)), calc(12cqw * var(--font-size-container-scale)), var(--font-size-12));
+    --typo-14-font-size: clamp(calc(var(--font-size-14) * var(--font-size-mobile-scale)), calc(14cqw * var(--font-size-container-scale)), var(--font-size-14));
+    --typo-16-font-size: clamp(calc(var(--font-size-16) * var(--font-size-mobile-scale)), calc(16cqw * var(--font-size-container-scale)), var(--font-size-16));
+    --typo-22-font-size: clamp(calc(var(--font-size-22) * var(--font-size-mobile-scale)), calc(22cqw * var(--font-size-container-scale)), var(--font-size-22));
+    --typo-30-font-size: clamp(calc(var(--font-size-30) * var(--font-size-mobile-scale)), calc(30cqw * var(--font-size-container-scale)), var(--font-size-30));
+}
+
+@utility typo-12 {
+    font-size: var(--typo-12-font-size);
+}
+
+@utility typo-14 {
+    font-size: var(--typo-14-font-size);
+}
+
+@utility typo-16 {
+    font-size: var(--typo-16-font-size);
+}
+
+@utility typo-22 {
+    font-size: var(--typo-22-font-size);
+}
+
+@utility typo-30 {
+    font-size: var(--typo-30-font-size);
+}

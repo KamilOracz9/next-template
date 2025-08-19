@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Breuer";
+    src: url("./BreuerText-Bold.ttf") format("truetype");
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Breuer";
+    src: url("./BreuerText-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Breuer";
+    src: url("./BreuerText-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Breuer";
+    src: url("./BreuerText-Bold.ttf") format("truetype");
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
