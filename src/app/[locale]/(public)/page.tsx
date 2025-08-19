@@ -1,4 +1,3 @@
-import { Counter } from "@/components";
 import { useTranslations } from "next-intl";
 
 export default function HomePage() {
@@ -6,8 +5,6 @@ export default function HomePage() {
   return (
     <div>
       <h1 className="bg-primary">{t('title')}</h1>
-
-      <Counter />
     </div>
   );
 }
